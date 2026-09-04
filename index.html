@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickTools - 便利ツール箱</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="window">
+
+```
+<header class="titlebar">
+  <div class="title">🧰 QuickTools</div>
+  <div class="window-buttons">
+    <span>_</span>
+    <span>□</span>
+    <span>×</span>
+  </div>
+</header>
+
+<div class="toolbar">
+  <strong>QuickTools</strong>
+  <span>ブラウザだけで使える便利ツール集</span>
+</div>
+
+<main class="layout">
+
+  <aside class="sidebar">
+    <button class="tool-btn active" data-tool="password">🔐 パスワード生成</button>
+    <button class="tool-btn" data-tool="counter">📝 文字数カウント</button>
+    <button class="tool-btn" data-tool="case">🔤 文字変換</button>
+    <button class="tool-btn" data-tool="calculator">🧮 計算機</button>
+    <button class="tool-btn" data-tool="color">🎨 カラー変換</button>
+    <button class="tool-btn" data-tool="url">🔗 URL変換</button>
+    <button class="tool-btn" data-tool="json">📋 JSON整形</button>
+    <button class="tool-btn" data-tool="uuid">🆔 UUID生成</button>
+    <button class="tool-btn" data-tool="timer">⏱️ タイマー</button>
+    <button class="tool-btn" data-tool="textfile">📄 テキスト保存</button>
+  </aside>
+
+  <section class="content">
+    <div id="app"></div>
+  </section>
+
+</main>
+
+<footer>
+  QuickTools v1.0　|　基本的にブラウザ内だけで処理します
+</footer>
+```
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
