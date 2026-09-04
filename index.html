@@ -1,60 +1,66 @@
 <!DOCTYPE html>
-
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QuickTools - 便利ツール箱</title>
+  <title>QuickTools</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="window">
 
-```
-<header class="titlebar">
-  <div class="title">🧰 QuickTools</div>
-  <div class="window-buttons">
-    <span>_</span>
-    <span>□</span>
-    <span>×</span>
+<div class="window">
+
+  <div class="titlebar">
+    <span>🛠️ QuickTools</span>
+
+    <div>
+      <button>＿</button>
+      <button>□</button>
+      <button>×</button>
+    </div>
   </div>
-</header>
 
-<div class="toolbar">
-  <strong>QuickTools</strong>
-  <span>ブラウザだけで使える便利ツール集</span>
+  <div class="toolbar">
+    <button onclick="loadTool('home')">🏠 ホーム</button>
+    <button onclick="loadTool('password')">🔑 パスワード</button>
+    <button onclick="loadTool('counter')">🔢 文字数</button>
+    <button onclick="loadTool('calculator')">🧮 電卓</button>
+    <button onclick="loadTool('color')">🎨 色</button>
+    <button onclick="loadTool('url')">🔗 URL</button>
+    <button onclick="loadTool('json')">📋 JSON</button>
+    <button onclick="loadTool('uuid')">🆔 UUID</button>
+    <button onclick="loadTool('timer')">⏱️ タイマー</button>
+    <button onclick="loadTool('textfile')">📄 TXT</button>
+  </div>
+
+  <div class="content">
+
+    <aside>
+      <h3>ツール</h3>
+
+      <button onclick="loadTool('password')">🔑 パスワード生成</button>
+      <button onclick="loadTool('counter')">🔢 文字数カウント</button>
+      <button onclick="loadTool('calculator')">🧮 電卓</button>
+      <button onclick="loadTool('color')">🎨 HEX / RGB</button>
+      <button onclick="loadTool('url')">🔗 URL変換</button>
+      <button onclick="loadTool('json')">📋 JSON整形</button>
+      <button onclick="loadTool('uuid')">🆔 UUID生成</button>
+      <button onclick="loadTool('timer')">⏱️ タイマー</button>
+      <button onclick="loadTool('textfile')">📄 TXT作成</button>
+    </aside>
+
+    <main id="app"></main>
+
+  </div>
+
+  <footer>
+    QuickTools — 完全ブラウザ動作
+  </footer>
+
 </div>
 
-<main class="layout">
-
-  <aside class="sidebar">
-    <button class="tool-btn active" data-tool="password">🔐 パスワード生成</button>
-    <button class="tool-btn" data-tool="counter">📝 文字数カウント</button>
-    <button class="tool-btn" data-tool="case">🔤 文字変換</button>
-    <button class="tool-btn" data-tool="calculator">🧮 計算機</button>
-    <button class="tool-btn" data-tool="color">🎨 カラー変換</button>
-    <button class="tool-btn" data-tool="url">🔗 URL変換</button>
-    <button class="tool-btn" data-tool="json">📋 JSON整形</button>
-    <button class="tool-btn" data-tool="uuid">🆔 UUID生成</button>
-    <button class="tool-btn" data-tool="timer">⏱️ タイマー</button>
-    <button class="tool-btn" data-tool="textfile">📄 テキスト保存</button>
-  </aside>
-
-  <section class="content">
-    <div id="app"></div>
-  </section>
-
-</main>
-
-<footer>
-  QuickTools v1.0　|　基本的にブラウザ内だけで処理します
-</footer>
-```
-
-  </div>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
